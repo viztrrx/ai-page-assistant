@@ -5,7 +5,7 @@
 (() => {
   // ===== PUT YOUR KEY HERE =====
   // This is the only line you edit
-  const BUILT_IN_KEY = "gsk_YOUR_GROQ_KEY_HERE"; 
+  const BUILT_IN_KEY = "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"; 
   const BUILT_IN_MODEL = "llama-3.3-70b-versatile"; // or gpt-4o if using OpenAI
   const BUILT_IN_API_URL = "https://api.groq.com/openai/v1/chat/completions"; 
   // For OpenAI use: "https://api.openai.com/v1/chat/completions" and model "gpt-4o" or "gpt-5"
