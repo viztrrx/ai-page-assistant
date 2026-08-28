@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Page Assistant - Dark Blue</title>
+<style>
+  body{margin:0;background:#050b1e;color:#cbd5e1;font-family:Inter,system-ui,sans-serif;display:flex;justify-content:center;min-height:100vh}
+  .wrap{max-width:760px;padding:60px 24px}
+  h1{color:#93c5fd;font-size:42px;letter-spacing:-1px;margin:0 0 10px}
+  h1 span{color:#3b82f6}
+  .sub{color:#60a5fa;font-size:18px;line-height:1.5;margin-bottom:32px}
+  .card{background:#0a1931;border:1px solid #1e3a8a;border-radius:18px;padding:20px;margin-bottom:20px}
+  .card h3{color:#93c5fd;margin:0 0 10px;font-size:14px;letter-spacing:1px;text-transform:uppercase}
+  code{display:block;background:#070f26;border:1px solid #132a5c;border-radius:12px;padding:14px 16px;color:#93c5fd;font-size:13px;overflow-x:auto;white-space:pre-wrap;word-break:break-all}
+  .btn{display:inline-block;background:#2563eb;color:#fff;padding:12px 20px;border-radius:12px;text-decoration:none;font-weight:700;margin-top:12px}
+  .btn:hover{background:#1d4ed8}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:600px){.grid{grid-template-columns:1fr}}
+  .pill{display:inline-block;background:#0f2043;border:1px solid #1e3a8a;color:#60a5fa;padding:4px 10px;border-radius:999px;font-size:11px;margin-right:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>AI <span>PAGE ASSIST</span></h1>
+  <div class="sub">A dark-blue, minimal AI overlay you can inject into any website with one <code style="display:inline;padding:2px 8px;font-size:14px">fetch()</code> command. It sees your current tab and answers using GPT-4o / GPT-5.</div>
+  
+  <div class="card">
+    <h3>⚡ One-line Console Loader</h3>
+    <code>fetch('https://raw.githubusercontent.com/YOUR_USERNAME/ai-page-assistant/main/ai-overlay.js')
+  .then(res => res.text())
+  .then(code => eval(code));</code>
+    <a class="btn" href="bookmarklet.html">Get Bookmarklet →</a>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>✨ What it does</h3>
+      <div style="font-size:14px;line-height:1.6">
+        • Analyze any page you are on<br>
+        • Summarize articles in 5 bullets<br>
+        • Ask "what's the price?" "is this legit?"<br>
+        • Extract all visible text<br>
+        • Draggable, dark-blue UI
+      </div>
+    </div>
+    <div class="card">
+      <h3>🔒 Setup</h3>
+      <div style="font-size:14px;line-height:1.6">
+        1. Upload <b>ai-overlay.js</b> to this repo<br>
+        2. Get OpenAI API key at platform.openai.com<br>
+        3. Paste key in the overlay (saved locally)<br>
+        4. Model: gpt-4o or gpt-5
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Models Supported</h3>
+    <div style="margin-top:8px">
+      <span class="pill">gpt-4o</span>
+      <span class="pill">gpt-4o-mini</span>
+      <span class="pill">gpt-5</span>
+      <span class="pill">gpt-5-mini</span>
+      <span class="pill">gpt-4-turbo</span>
+    </div>
+    <p style="font-size:13px;color:#64748b;margin-top:12px">Just type the model name in the overlay input. If you don't have GPT-5 access yet, use gpt-4o - it's the best available.</p>
+  </div>
+
+  <p style="font-size:12px;color:#334155;text-align:center;margin-top:30px">Built for Chrome Console. MIT License. No backend. Key never leaves your browser except to OpenAI.</p>
+</div>
+</body>
+</html>
